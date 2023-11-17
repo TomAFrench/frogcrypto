@@ -1,0 +1,8 @@
+[package]
+name = "frogcrypto"
+type = "bin"
+authors = [""]
+compiler_version = ">=0.19.2"
+
+[dependencies]
+semaphore = { git = "https://github.com/TomAFrench/semaphore-noir", tag = "master" }
