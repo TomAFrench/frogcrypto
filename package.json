@@ -1,0 +1,11 @@
+{
+  "name": "frogcrypto",
+  "version": "0.1.0",
+  "main": "index.js",
+  "repository": "git@github.com:TomAFrench/frogcrypto.git",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@pcd/eddsa-frog-pcd": "^0.0.1"
+  }
+}

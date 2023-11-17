@@ -31,15 +31,15 @@ mod temperament {
   global DOOM = 8;
   global HMBL = 9;
   global HNGY = 10;
-  global HRNY = 12;
-  global HYPE = 13;
-  global MEOW = 14;
-  global OKAY = 15;
-  global PUFF = 16;
-  global SADG = 17;
-  global SLLY = 18;
-  global SLPY = 19;
-  global WISE = 20;
-  global WOW = 21;
-  global YOLO = 22;
+  global HRNY = 11;
+  global HYPE = 12;
+  global MEOW = 13;
+  global OKAY = 14;
+  global PUFF = 15;
+  global SADG = 16;
+  global SLLY = 17;
+  global SLPY = 18;
+  global WISE = 19;
+  global WOW = 20;
+  global YOLO = 21;
 }

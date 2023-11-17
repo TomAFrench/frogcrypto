@@ -1,6 +1,6 @@
 [package]
 name = "frogcrypto"
-type = "bin"
+type = "lib"
 authors = [""]
 compiler_version = ">=0.19.2"
 
