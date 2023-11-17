@@ -2,7 +2,7 @@ mod constants;
 mod frog;
 
 use frog::Frog;
-use dep::semaphore::SemaphoreIdentity;
+use dep::semaphore::{SemaphoreIdentity, calculate_nullifier_hash};
 
 fn main(
     frog: Frog,
@@ -26,8 +26,8 @@ fn main(
     );
     assert(is_valid_frog, "Invalid frog");
 
-    // Verify semaphore private identity matches the frog owner semaphore ID.
-    assert_eq(frog.owner_semaphore_id, semaphore_identity.identifier(), "semaphore identity does not match frog owner");
+    // Verify semaphore private identity matches the frog owner semaphore identity commitment.
+    assert_eq(frog.owner_semaphore_id, semaphore_identity.commitment(), "semaphore identity does not match frog owner");
 
-    semaphore_identity.nullifier_hash(external_nullifier)
+    calculate_nullifier_hash(external_nullifier, semaphore_identity.nullifier)
 }
